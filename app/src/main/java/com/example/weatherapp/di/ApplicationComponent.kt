@@ -3,13 +3,15 @@ package com.example.weatherapp.di
 import android.content.Context
 import com.example.weatherapp.di.annotations.ApplicationScope
 import com.example.weatherapp.di.modules.DataModule
+import com.example.weatherapp.di.modules.PresentationModule
 import dagger.BindsInstance
 import dagger.Component
 
 @ApplicationScope
 @Component(
     modules = [
-        DataModule::class
+        DataModule::class,
+        PresentationModule::class
     ]
 )
 interface ApplicationComponent {

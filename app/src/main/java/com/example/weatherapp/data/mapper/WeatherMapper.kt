@@ -13,7 +13,7 @@ fun WeatherCurrentDto.toEntity(): Weather = current.toEntity()
 fun WeatherDto.toEntity(): Weather = Weather(
     tempC = tempC,
     conditionText = condition.text,
-    conditionUrl = condition.iconUrl.correctImageUrl(),
+    conditionIconUrl = condition.iconUrl.correctImageUrl(),
     date = date.toCalendar()
 )
 
@@ -24,7 +24,7 @@ fun WeatherForecastDto.toEntity() = Forecast(
         Weather(
             tempC = dayWeatherDto.tempC,
             conditionText = dayWeatherDto.condition.text,
-            conditionUrl = dayWeatherDto.condition.iconUrl.correctImageUrl(),
+            conditionIconUrl = dayWeatherDto.condition.iconUrl.correctImageUrl(),
             date = dayDto.date.toCalendar()
         )
     }
