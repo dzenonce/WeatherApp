@@ -1,6 +1,5 @@
 package com.example.weatherapp.presentation.favourite
 
-import android.service.autofill.OnClickAction
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -231,7 +230,7 @@ private fun SearchCard(
             Text(
                 text = stringResource(R.string.search),
                 color = MaterialTheme.colorScheme.background,
-                modifier = Modifier.padding(16.dp)
+                modifier = Modifier.padding(end = 16.dp)
             )
         }
     }

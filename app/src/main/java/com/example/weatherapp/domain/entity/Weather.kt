@@ -6,5 +6,5 @@ data class Weather(
     val tempC: Float,
     val conditionText: String,
     val conditionIconUrl: String,
-    val date: Calendar?,
+    val date: Calendar,
 )
