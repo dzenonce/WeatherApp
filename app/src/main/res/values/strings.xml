@@ -3,4 +3,7 @@
     <string name="add_favourite">Add Favourite</string>
     <string name="search">Search</string>
     <string name="upcoming">Прогноз погоды</string>
+    <string name="not_found">Not found</string>
+    <string name="error_search">Error search</string>
+    <string name="search_place">Search</string>
 </resources>
